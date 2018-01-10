@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/RenderTextureTest.unity
+- path: Assets/meh.unity
   isLoaded: 1
   isActive: 1
