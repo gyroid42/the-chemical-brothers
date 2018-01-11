@@ -806,11 +806,11 @@ MonoBehaviour:
   interactables_:
   - {fileID: 1838828199}
   - {fileID: 1632199385}
-  - {fileID: 1632199385}
-  - {fileID: 1838828199}
-  - {fileID: 1838828199}
-  - {fileID: 1838828199}
-  - {fileID: 1838828199}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   mistakes_: 0
   camera_: {fileID: 908333154}
   currentAppState_: 1
@@ -822,8 +822,6 @@ MonoBehaviour:
   - {x: 0, y: 13.16, z: -8.59}
   mainMenuRotation_: {x: 0, y: 0, z: 0}
   mainMenuLocation_: {x: 0, y: 0, z: -50}
-  leaderBoardRotation_: {x: 0, y: 0, z: 0}
-  leaderBoardLocation_: {x: 0, y: 0, z: 0}
   totalSteps_: 11
 --- !u!4 &1261574729
 Transform:
@@ -1079,8 +1077,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1632199380}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -19.189999, y: 8.3, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 5, y: 5.44, z: 0}
+  m_LocalScale: {x: 2, y: 0.5, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -1093,16 +1091,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1632199380}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d15c3c9d102bb8498fe50669733daec, type: 3}
+  m_Script: {fileID: 11500000, guid: 63f8536c841477f47a0af286c822312e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  workAreaPosition_: {x: 0, y: 0, z: 0}
+  workAreaPosition_: {x: 5, y: 5.5, z: 0}
   startPosition_: {x: 0, y: 0, z: 0}
   endPosition_: {x: 0, y: 0, z: 0}
-  gotoPosition_: {x: 0, y: 0, z: 0}
-  moveDir_: {x: 0, y: 0, z: 0}
-  speed_: 0
-  isMoving_: 0
 --- !u!1 &1663465241
 GameObject:
   m_ObjectHideFlags: 0
@@ -1344,8 +1338,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1838828194}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.95, y: 5.35, z: 0.22}
-  m_LocalScale: {x: 2, y: 0.5, z: 2}
+  m_LocalPosition: {x: 2.46, y: 6.28, z: -0.95}
+  m_LocalScale: {x: 0.5, y: 2, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -1358,16 +1352,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1838828194}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5bcbf7c2c1fc43418ca3d1f0c46deee, type: 3}
+  m_Script: {fileID: 11500000, guid: 843e81ef321a29f46833bbbefd415e7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  workAreaPosition_: {x: -3, y: 7, z: 0}
-  startPosition_: {x: -28.39, y: 8.4, z: 0}
-  endPosition_: {x: 23, y: 7, z: 0}
-  gotoPosition_: {x: 0, y: 0, z: 0}
-  moveDir_: {x: 0, y: 0, z: 0}
-  speed_: 0
-  isMoving_: 0
+  workAreaPosition_: {x: 2.5, y: 6.3, z: 0}
+  startPosition_: {x: 0, y: 0, z: 0}
+  endPosition_: {x: 0, y: 0, z: 0}
 --- !u!1 &1874799103
 GameObject:
   m_ObjectHideFlags: 0
