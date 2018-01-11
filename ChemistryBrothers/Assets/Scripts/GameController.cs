@@ -191,7 +191,7 @@ public class GameController : MonoBehaviour {
 
         if ( Input.GetMouseButtonDown(0))
         {
-            EndStep();
+            //EndStep();
         }
     }
 
@@ -236,5 +236,26 @@ public class GameController : MonoBehaviour {
         }
     }
 
+    // The functions below are hard coded functions for state switching based on user input
+    // They trigger once buttons are pressed on the interfaces
+    public void SetStatePlaying()
+    {
+        ChangeAppState(APPSTATE.PLAYING);
+    }
 
+    public void SetStateMenu()
+    {
+        ChangeAppState(APPSTATE.MAINMENU);
+    }
+
+    public void SetStateGameOver()
+    {
+        ChangeAppState(APPSTATE.GAMEOVER);
+    }
+
+    // When this is called, the game will close
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
 }
