@@ -29,7 +29,7 @@ public class MoleculeTouchInputScript : MonoBehaviour {
             Vector3 mouseDist = previousPosition - Input.mousePosition;
 
             // Update rotation
-            TargetMolecule.transform.Rotate(0, mouseDist.x* RotationCoeff, -mouseDist.y* RotationCoeff, Space.World);
+            TargetMolecule.transform.Rotate(-mouseDist.y * RotationCoeff, mouseDist.x* RotationCoeff, 0, Space.World);
 
             // Set previous to position to current position for next pass
             previousPosition = Input.mousePosition;

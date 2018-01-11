@@ -179,6 +179,18 @@ public class GameController : MonoBehaviour {
         return currentStep_;
     }
 
+    // Determine if game is in PLAYING state for UI rendering
+    public bool GamePlaying()
+    {
+        if (currentAppState_ == APPSTATE.PLAYING)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 
 
     private void StepUpdate()
