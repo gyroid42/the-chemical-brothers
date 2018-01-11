@@ -38,9 +38,6 @@ public class GameController : MonoBehaviour {
     public Vector3 mainMenuRotation_;
     public Vector3 mainMenuLocation_;
 
-    public Vector3 leaderBoardRotation_;
-    public Vector3 leaderBoardLocation_;
-
 
     private int currentStep_;
     public int totalSteps_;
@@ -69,7 +66,7 @@ public class GameController : MonoBehaviour {
         camera_.transform.eulerAngles = mainMenuRotation_;
 
         stepInteractables_ = new List<List<int>>();
-        stepInteractables_.Add(new List<int> { 0 });
+        stepInteractables_.Add(new List<int> { 0, 1 });
         stepInteractables_.Add(new List<int> { 1 });
         stepInteractables_.Add(new List<int> { 0 });
         stepInteractables_.Add(new List<int> { 1 });

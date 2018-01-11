@@ -15,7 +15,7 @@ public class BaseInteractable : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-        speed_ = 20.0f;
+        speed_ = 1.0f;
         isMoving_ = false;
 	}
 
@@ -44,6 +44,9 @@ public class BaseInteractable : MonoBehaviour {
         moveDir_ = gotoPosition_ - transform.position;
         moveDir_.Normalize();
         isMoving_ = true;
+
+        Debug.Log(gotoPosition_);
+
     }
 
     public virtual void ExitWorkArea()
@@ -52,6 +55,8 @@ public class BaseInteractable : MonoBehaviour {
         moveDir_ = gotoPosition_ - transform.position;
         moveDir_.Normalize();
         isMoving_ = true;
+
+        Debug.Log(gotoPosition_);
     }
 
 
