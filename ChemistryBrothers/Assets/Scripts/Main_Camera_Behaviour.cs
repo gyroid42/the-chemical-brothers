@@ -23,7 +23,7 @@ public class Main_Camera_Behaviour : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-        transform.position = cameraPositions_[0];
+        //transform.position = cameraPositions_[0];
 	}
 	
 	// Update is called once per frame
