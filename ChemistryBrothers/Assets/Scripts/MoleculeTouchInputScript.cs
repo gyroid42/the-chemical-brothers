@@ -17,7 +17,7 @@ public class MoleculeTouchInputScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && CursorContained(Input.mousePosition))
         {
             // Set the initial value of the cursor
             previousPosition = Input.mousePosition;
@@ -34,5 +34,15 @@ public class MoleculeTouchInputScript : MonoBehaviour {
             // Set previous to position to current position for next pass
             previousPosition = Input.mousePosition;
         }
+    }
+
+    bool CursorContained (Vector3 pos)
+    {
+        float x = pos.x;
+        float y = pos.y;
+
+        
+
+        return true;
     }
 }
