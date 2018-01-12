@@ -59,5 +59,11 @@ public class BaseInteractable : MonoBehaviour {
         Debug.Log(gotoPosition_);
     }
 
+    public virtual void Reset()
+    {
+        transform.position = startPosition_;
+        isMoving_ = false;
+    }
+
 
 }

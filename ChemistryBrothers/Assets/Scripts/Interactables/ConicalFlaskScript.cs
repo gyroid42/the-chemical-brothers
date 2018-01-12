@@ -17,6 +17,18 @@ public class ConicalFlaskScript : BaseInteractable {
 
     Plane interactionPlane = new Plane(new Vector3(1.0f, 0.0f, 0.0f), new Vector3(3.09f, 1.51f, -3.9f));
 
+    public override void Reset()
+    {
+        base.Reset();
+
+        numStep = 0;
+        weight = 0.0f;
+
+        userTouching = false;
+        onScales = false;
+    }
+
+
     public override void EnterWorkArea()
     {
         if (numStep == 0)
@@ -131,7 +143,7 @@ public class ConicalFlaskScript : BaseInteractable {
                     }
 
                     GameController.controller_.EndStep();
-
+                    Debug.Log("number of mistakes " + GameController.controller_.mistakes_);
                 }
             }
         }

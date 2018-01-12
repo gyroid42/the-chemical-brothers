@@ -7,6 +7,13 @@ public class BalanceScript : BaseInteractable {
     int numStep = 0;
 
 
+    public override void Reset()
+    {
+        base.Reset();
+
+        numStep = 0;
+    }
+
     public override void EnterWorkArea()
     {
         base.EnterWorkArea();
