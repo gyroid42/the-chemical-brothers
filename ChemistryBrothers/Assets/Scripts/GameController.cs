@@ -137,6 +137,7 @@ public class GameController : MonoBehaviour {
     {
         currentStep_ = 0;
         currentStepState_ = STEPSTATE.STARTSCREEN;
+        mistakes_ = 0;
         camera_.GotoPosition(stepLocations_[0], stepRotations_[0]);
     }
 
@@ -147,6 +148,7 @@ public class GameController : MonoBehaviour {
         {
             interactables_[i].Reset();
         }
+        activeInteractables_.Clear();
         camera_.GotoPosition(mainMenuLocation_, mainMenuRotation_);
         ChangeAppState(APPSTATE.SCORESCREEN);
     }

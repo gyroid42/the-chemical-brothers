@@ -22,7 +22,7 @@ public class BalanceScript : BaseInteractable {
     public override void ExitWorkArea()
     {
         numStep++;
-        if (numStep > 1)
+        if (numStep > 0)
         {
             base.ExitWorkArea();
         }

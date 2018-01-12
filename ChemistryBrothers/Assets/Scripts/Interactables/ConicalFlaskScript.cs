@@ -8,6 +8,8 @@ public class ConicalFlaskScript : BaseInteractable {
 
     float weight = 0.0f;
 
+    bool isActive = false;
+
     Touch userTouch;
 
     bool userTouching = false;
@@ -34,15 +36,19 @@ public class ConicalFlaskScript : BaseInteractable {
         if (numStep == 0)
         {
             base.EnterWorkArea();
+
+            isActive = true;
         }
     }
 
     public override void ExitWorkArea()
     {
         numStep++;
-        if (numStep > 1)
+        if (numStep > 0)
         {
             base.ExitWorkArea();
+
+            isActive = false;
         }
     }
 
@@ -113,8 +119,10 @@ public class ConicalFlaskScript : BaseInteractable {
 
                 if (Input.GetMouseButtonDown(0))
                 {
-                    if (Input.mousePosition.x >= 505 && Input.mousePosition.x <= 523 &&
-                        Input.mousePosition.y >= 203 && Input.mousePosition.y <= 225)
+                    Vector3 buttonPos1 = Camera.main.WorldToScreenPoint(scales_.transform.position + new Vector3(-0.1219f, 0.089f, 0.0689f));
+                    Vector3 buttonPos2 = Camera.main.WorldToScreenPoint(scales_.transform.position + new Vector3(-0.1717f, 0.069f, 0.0053f));
+                    if (Input.mousePosition.x >= buttonPos1.x && Input.mousePosition.x <= buttonPos2.x &&
+                        Input.mousePosition.y >= buttonPos2.y && Input.mousePosition.y <= buttonPos1.y)
                     {
                         weight = 0.0f;
                     }
@@ -127,23 +135,30 @@ public class ConicalFlaskScript : BaseInteractable {
 
     void OnGUI()
     {
-        string display = "Weight:  " + weight;
-        GUI.TextField(new Rect(0, 0, 300, 100), display);
-
-        if (numStep == 0)
+        if (isActive)
         {
-            if (onScales)
+            string display = weight.ToString();
+
+
+            Vector3 textPos = Camera.main.WorldToScreenPoint(scales_.transform.position + new Vector3(-0.127f, 0.0719f, -0.0138f));
+            GUI.TextField(new Rect(textPos.x, textPos.y, 20, 20), display);
+
+
+            if (numStep == 0)
             {
-
-                if (GUI.Button(new Rect(0, 300, 100, 50), "Next Step"))
+                if (onScales)
                 {
-                    if (weight != 0.0f)
-                    {
-                        GameController.controller_.mistakes_++;
-                    }
 
-                    GameController.controller_.EndStep();
-                    Debug.Log("number of mistakes " + GameController.controller_.mistakes_);
+                    if (GUI.Button(new Rect(0, 300, 100, 50), "Next Step"))
+                    {
+                        if (weight != 0.0f)
+                        {
+                            GameController.controller_.mistakes_++;
+                        }
+
+                        GameController.controller_.EndStep();
+                        Debug.Log("number of mistakes " + GameController.controller_.mistakes_);
+                    }
                 }
             }
         }
