@@ -7,7 +7,8 @@ public enum APPSTATE
 {
     PLAYING,
     MAINMENU,
-    GAMEOVER
+    GAMEOVER,
+    SCORESCREEN
 }
 
 public enum STEPSTATE
@@ -43,6 +44,7 @@ public class GameController : MonoBehaviour {
     public int totalSteps_;
 
 
+    // on awake make sure there is only one instance of the object containing this script
     void Awake()
     {
         if (controller_ == null)
@@ -62,12 +64,14 @@ public class GameController : MonoBehaviour {
 
         //camera_ = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Main_Camera_Behaviour>();
 
+        // set camera to start position
         camera_.transform.position = mainMenuLocation_;
         camera_.transform.eulerAngles = mainMenuRotation_;
 
+        // set all the interactables for each step
         stepInteractables_ = new List<List<int>>();
         stepInteractables_.Add(new List<int> { 0, 1 });
-        stepInteractables_.Add(new List<int> { 0, 1 });
+        stepInteractables_.Add(new List<int> { 0, 1, 2, 3 });
         stepInteractables_.Add(new List<int> { 0 });
         stepInteractables_.Add(new List<int> { 1 });
         stepInteractables_.Add(new List<int> { 0 });
@@ -79,15 +83,18 @@ public class GameController : MonoBehaviour {
         stepInteractables_.Add(new List<int> { 0 });
         activeInteractables_ = new List<BaseInteractable>();
 
+        // set app state to main menu
         currentAppState_ = APPSTATE.MAINMENU;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		
+        // if the game is playing
         if (currentAppState_ == APPSTATE.PLAYING)
         {
 
+            // goto update method for current game state
             switch (currentStepState_)
             {
                 case STEPSTATE.STARTSCREEN:
@@ -116,12 +123,11 @@ public class GameController : MonoBehaviour {
             }
 
         }
+
+        //
         else if (currentAppState_ == APPSTATE.MAINMENU)
         {
-            if (Input.GetMouseButtonDown(0))
-            {
-                ChangeAppState(APPSTATE.PLAYING);
-            }
+            
         }
         
 	}
@@ -136,8 +142,13 @@ public class GameController : MonoBehaviour {
 
     public void EndGame()
     {
+
+        for (int i = 0; i < interactables_.Count; i++)
+        {
+            interactables_[i].Reset();
+        }
         camera_.GotoPosition(mainMenuLocation_, mainMenuRotation_);
-        ChangeAppState(APPSTATE.MAINMENU);
+        ChangeAppState(APPSTATE.SCORESCREEN);
     }
 
 
@@ -178,6 +189,11 @@ public class GameController : MonoBehaviour {
         return currentStep_;
     }
 
+    public APPSTATE CurrentAppState()
+    {
+        return currentAppState_;
+    }
+
     // Determine if game is in PLAYING state for UI rendering
     public bool GamePlaying()
     {
@@ -201,7 +217,6 @@ public class GameController : MonoBehaviour {
 
         if ( Input.GetMouseButtonDown(0))
         {
-            //EndStep();
         }
     }
 
