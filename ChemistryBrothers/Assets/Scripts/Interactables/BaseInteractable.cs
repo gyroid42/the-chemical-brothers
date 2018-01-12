@@ -17,6 +17,8 @@ public class BaseInteractable : MonoBehaviour {
 
         speed_ = 1.0f;
         isMoving_ = false;
+
+        transform.position = startPosition_;
 	}
 
     void Update()
