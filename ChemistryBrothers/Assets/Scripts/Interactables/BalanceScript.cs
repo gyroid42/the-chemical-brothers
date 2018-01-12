@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BalanceScript : BaseInteractable {
 
-
+    int numStep = 0;
 
 
     public override void EnterWorkArea()
@@ -14,7 +14,11 @@ public class BalanceScript : BaseInteractable {
 
     public override void ExitWorkArea()
     {
-        base.ExitWorkArea();
+        numStep++;
+        if (numStep > 1)
+        {
+            base.ExitWorkArea();
+        }
     }
 
 

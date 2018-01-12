@@ -67,7 +67,7 @@ public class GameController : MonoBehaviour {
 
         stepInteractables_ = new List<List<int>>();
         stepInteractables_.Add(new List<int> { 0, 1 });
-        stepInteractables_.Add(new List<int> { 1 });
+        stepInteractables_.Add(new List<int> { 0, 1 });
         stepInteractables_.Add(new List<int> { 0 });
         stepInteractables_.Add(new List<int> { 1 });
         stepInteractables_.Add(new List<int> { 0 });
@@ -138,7 +138,6 @@ public class GameController : MonoBehaviour {
     {
         camera_.GotoPosition(mainMenuLocation_, mainMenuRotation_);
         ChangeAppState(APPSTATE.MAINMENU);
-        Debug.Log("end game has been called");
     }
 
 
@@ -191,7 +190,7 @@ public class GameController : MonoBehaviour {
 
         if ( Input.GetMouseButtonDown(0))
         {
-            EndStep();
+            //EndStep();
         }
     }
 
@@ -212,7 +211,7 @@ public class GameController : MonoBehaviour {
         }
     }
 
-    private void EndStep()
+    public void EndStep()
     {
         if (currentAppState_ == APPSTATE.PLAYING)
         {

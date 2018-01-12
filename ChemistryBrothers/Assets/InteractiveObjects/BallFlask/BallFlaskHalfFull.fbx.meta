@@ -1,22 +1,22 @@
 fileFormatVersion: 2
 guid: 0bdec82a5e489bd4da7defed2588592d
-timeCreated: 1515682167
+timeCreated: 1515683270
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
     100000: //RootNode
-    100002: polySurface33
-    100004: polySurface34
+    100002: polySurface31
+    100004: polySurface33
     400000: //RootNode
-    400002: polySurface33
-    400004: polySurface34
-    2300000: polySurface33
-    2300002: polySurface34
-    3300000: polySurface33
-    3300002: polySurface34
-    4300000: polySurface33
-    4300002: polySurface34
+    400002: polySurface31
+    400004: polySurface33
+    2300000: polySurface31
+    2300002: polySurface33
+    3300000: polySurface31
+    3300002: polySurface33
+    4300000: polySurface31
+    4300002: polySurface33
     9500000: //RootNode
   materials:
     importMaterials: 1

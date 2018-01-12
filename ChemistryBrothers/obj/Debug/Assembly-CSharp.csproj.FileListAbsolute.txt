@@ -30,3 +30,36 @@ E:\SeriousGameJam\the-chemical-brothers\ChemistryBrothers\Temp\bin\Debug\UnityEn
 E:\SeriousGameJam\the-chemical-brothers\ChemistryBrothers\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 E:\SeriousGameJam\the-chemical-brothers\ChemistryBrothers\obj\Debug\Assembly-CSharp.dll
 E:\SeriousGameJam\the-chemical-brothers\ChemistryBrothers\obj\Debug\Assembly-CSharp.pdb
+C:\Users\Jock\Documents\uni work\game jam\the-chemical-brothers\ChemistryBrothers\Temp\bin\Debug\Assembly-CSharp.dll
+C:\Users\Jock\Documents\uni work\game jam\the-chemical-brothers\ChemistryBrothers\Temp\bin\Debug\Assembly-CSharp.pdb
+C:\Users\Jock\Documents\uni work\game jam\the-chemical-brothers\ChemistryBrothers\Temp\bin\Debug\nunit.framework.dll
+C:\Users\Jock\Documents\uni work\game jam\the-chemical-brothers\ChemistryBrothers\Temp\bin\Debug\UnityEditor.dll
+C:\Users\Jock\Documents\uni work\game jam\the-chemical-brothers\ChemistryBrothers\Temp\bin\Debug\UnityEngine.Analytics.dll
+C:\Users\Jock\Documents\uni work\game jam\the-chemical-brothers\ChemistryBrothers\Temp\bin\Debug\UnityEngine.dll
+C:\Users\Jock\Documents\uni work\game jam\the-chemical-brothers\ChemistryBrothers\Temp\bin\Debug\UnityEngine.HoloLens.dll
+C:\Users\Jock\Documents\uni work\game jam\the-chemical-brothers\ChemistryBrothers\Temp\bin\Debug\UnityEngine.Networking.dll
+C:\Users\Jock\Documents\uni work\game jam\the-chemical-brothers\ChemistryBrothers\Temp\bin\Debug\UnityEngine.TestRunner.dll
+C:\Users\Jock\Documents\uni work\game jam\the-chemical-brothers\ChemistryBrothers\Temp\bin\Debug\UnityEngine.Timeline.dll
+C:\Users\Jock\Documents\uni work\game jam\the-chemical-brothers\ChemistryBrothers\Temp\bin\Debug\UnityEngine.UI.dll
+C:\Users\Jock\Documents\uni work\game jam\the-chemical-brothers\ChemistryBrothers\Temp\bin\Debug\Mono.Cecil.dll
+C:\Users\Jock\Documents\uni work\game jam\the-chemical-brothers\ChemistryBrothers\Temp\bin\Debug\Unity.SerializationLogic.dll
+C:\Users\Jock\Documents\uni work\game jam\the-chemical-brothers\ChemistryBrothers\Temp\bin\Debug\Unity.DataContract.dll
+C:\Users\Jock\Documents\uni work\game jam\the-chemical-brothers\ChemistryBrothers\Temp\bin\Debug\ExCSS.Unity.dll
+C:\Users\Jock\Documents\uni work\game jam\the-chemical-brothers\ChemistryBrothers\Temp\bin\Debug\Unity.Legacy.NRefactory.dll
+C:\Users\Jock\Documents\uni work\game jam\the-chemical-brothers\ChemistryBrothers\Temp\bin\Debug\Unity.UNetWeaver.dll
+C:\Users\Jock\Documents\uni work\game jam\the-chemical-brothers\ChemistryBrothers\Temp\bin\Debug\Unity.CecilTools.dll
+C:\Users\Jock\Documents\uni work\game jam\the-chemical-brothers\ChemistryBrothers\Temp\bin\Debug\Mono.Cecil.Pdb.dll
+C:\Users\Jock\Documents\uni work\game jam\the-chemical-brothers\ChemistryBrothers\Temp\bin\Debug\Mono.Cecil.Mdb.dll
+C:\Users\Jock\Documents\uni work\game jam\the-chemical-brothers\ChemistryBrothers\Temp\bin\Debug\UnityEngine.xml
+C:\Users\Jock\Documents\uni work\game jam\the-chemical-brothers\ChemistryBrothers\Temp\bin\Debug\UnityEditor.xml
+C:\Users\Jock\Documents\uni work\game jam\the-chemical-brothers\ChemistryBrothers\Temp\bin\Debug\UnityEngine.UI.xml
+C:\Users\Jock\Documents\uni work\game jam\the-chemical-brothers\ChemistryBrothers\Temp\bin\Debug\UnityEngine.Networking.xml
+C:\Users\Jock\Documents\uni work\game jam\the-chemical-brothers\ChemistryBrothers\Temp\bin\Debug\UnityEngine.TestRunner.xml
+C:\Users\Jock\Documents\uni work\game jam\the-chemical-brothers\ChemistryBrothers\Temp\bin\Debug\nunit.framework.xml
+C:\Users\Jock\Documents\uni work\game jam\the-chemical-brothers\ChemistryBrothers\Temp\bin\Debug\UnityEngine.Timeline.xml
+C:\Users\Jock\Documents\uni work\game jam\the-chemical-brothers\ChemistryBrothers\Temp\bin\Debug\UnityEngine.Analytics.xml
+C:\Users\Jock\Documents\uni work\game jam\the-chemical-brothers\ChemistryBrothers\Temp\bin\Debug\UnityEngine.HoloLens.xml
+C:\Users\Jock\Documents\uni work\game jam\the-chemical-brothers\ChemistryBrothers\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+C:\Users\Jock\Documents\uni work\game jam\the-chemical-brothers\ChemistryBrothers\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+C:\Users\Jock\Documents\uni work\game jam\the-chemical-brothers\ChemistryBrothers\obj\Debug\Assembly-CSharp.dll
+C:\Users\Jock\Documents\uni work\game jam\the-chemical-brothers\ChemistryBrothers\obj\Debug\Assembly-CSharp.pdb
