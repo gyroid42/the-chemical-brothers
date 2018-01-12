@@ -67,7 +67,7 @@ public class GameController : MonoBehaviour {
 
         stepInteractables_ = new List<List<int>>();
         stepInteractables_.Add(new List<int> { 0, 1 });
-        stepInteractables_.Add(new List<int> { 1 });
+        stepInteractables_.Add(new List<int> { 0, 1 });
         stepInteractables_.Add(new List<int> { 0 });
         stepInteractables_.Add(new List<int> { 1 });
         stepInteractables_.Add(new List<int> { 0 });
@@ -138,7 +138,6 @@ public class GameController : MonoBehaviour {
     {
         camera_.GotoPosition(mainMenuLocation_, mainMenuRotation_);
         ChangeAppState(APPSTATE.MAINMENU);
-        Debug.Log("end game has been called");
     }
 
 
@@ -192,7 +191,6 @@ public class GameController : MonoBehaviour {
         }
     }
 
-
     private void StepUpdate()
     {
 
@@ -224,7 +222,7 @@ public class GameController : MonoBehaviour {
         }
     }
 
-    private void EndStep()
+    public void EndStep()
     {
         if (currentAppState_ == APPSTATE.PLAYING)
         {
@@ -248,6 +246,7 @@ public class GameController : MonoBehaviour {
         }
     }
 
+
     // The functions below are hard coded functions for state switching based on user input
     // They trigger once buttons are pressed on the interfaces
     public void SetStatePlaying()
@@ -270,4 +269,6 @@ public class GameController : MonoBehaviour {
     {
         Application.Quit();
     }
+
+
 }
